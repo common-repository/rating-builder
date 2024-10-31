@@ -1,0 +1,215 @@
+// out: ./redq-review.css, sourcemap: false, compress: true
+
+@wprb-var-color-ash: #e7e6e6;
+@wprb-var-color-yellow: #feac01;
+@wprb-var-color-title: #4a4a4a;
+@wprb-var-color-font: #5c5c5c;
+
+
+/* Wrapper */
+.wprb-reviews-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid @wprb-var-color-ash;
+
+  @media only screen and (max-width: 767px){
+    flex-direction: column;
+  }
+
+  /* Total Review */
+  .wprb-total-reviews-wrapper{
+    flex: 7;
+    padding-right: 30px;
+
+    @media only screen and (max-width: 767px){
+      width: 100%;
+      margin-bottom: 40px;
+      padding-right: 0;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+      width: 25%;
+      padding-right: 15px;
+    }
+
+    .wprb-review-title{
+      font-size: 21px;
+      font-weight: 400;
+      color: @wprb-var-color-title;
+      margin: 0 0 20px;
+      text-transform: uppercase;
+    }
+
+    .wprb-content-wrapper{
+      display: flex;
+      width: 100%;
+
+      .wprb-review-bar-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        li{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 5px;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+
+          span{
+            font-size: 16px;
+            font-weight: 700;
+            color: #919191;
+            margin: 0;
+            padding-right: 10px;
+            line-height: 1.1;
+            position: relative;
+
+            &:after{
+              content: 'star';
+              font-size: 13px;
+              font-weight: 700;
+              color: #919191;
+              padding-left: 4px;
+            }
+          }
+
+          div{
+            height: 10px;
+            display: flex;
+            background-color: @wprb-var-color-yellow;
+            border-radius: 0 5px 5px 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* Overall Rating */
+  .wprb-overall-rating-wrapper{
+    // width: 100%;
+    // padding: 0 30px;
+
+    @media only screen and (max-width: 767px){
+      width: 100%;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+      width: 55%;
+      padding: 0 15px;
+    }
+
+    .wprb-review-title{
+      font-size: 21px;
+      font-weight: 400;
+      color: @wprb-var-color-title;
+      margin: 0 0 20px;
+      text-transform: capitalize;;
+    }
+
+    .wprb-content-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;;
+      align-items: flex-start;
+      // flex-wrap: wrap;
+
+      .wprb-rating-category{
+        padding-right: 45px;
+
+        @media only screen and (min-width: 768px) and (max-width: 991px){
+          padding-right: 30px;
+          margin-bottom: 20px;
+        }
+
+        &:last-of-type{
+          padding-right: 0;
+        }
+
+        h3{
+          font-size: 16px;
+          font-weight: 400;
+          color: @wprb-var-color-font;
+          margin: 0 0 5px;
+          text-transform: uppercase;
+          line-height: 1.1;
+          vertical-align: top;
+        }
+
+        span{
+          font-size: 18px;
+          font-weight: 400;
+          color: @wprb-var-color-yellow;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+
+  .wprb-rating-number-wrapper{
+    flex: 5;
+    // padding-left: 30px;
+
+    @media only screen and (max-width: 767px){
+      width: 100%;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+      width: 20%;
+      padding-left: 15px;
+    }
+
+    .wprb-rating-number{
+      font-size: 65px;
+      font-weight: 300;
+      color: @wprb-var-color-yellow;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    ul{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      li{
+        font-size: 20px;
+        color: #d8d8d8;
+        margin-right: 5px;
+        line-height: 1.1;
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        &.active{
+          color: @wprb-var-color-yellow;
+        }
+      }
+    }
+  }
+}
+
+// .wprb-reviews-wrapper.column .wprb-overall-rating-wrapper .wprb-content-wrapper {
+//   flex-wrap: wrap;
+// }

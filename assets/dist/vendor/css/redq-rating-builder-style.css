@@ -1,0 +1,93 @@
+/*************************************/
+/*Rating Builder Style By Idris*/
+/*************************************/
+ul.rqt_comment_attachments_wrap {
+  display: block;
+  margin: 13px 0 15px;
+  padding: 0;
+  list-style: none;
+  height: 76px;
+  overflow: hidden;
+  max-width: 412px;
+}
+ul.rqt_comment_attachments_wrap li {
+  display: inline-block;
+  width: calc(100% / 5 - 10px);
+  height: 76px;
+  margin-right: 5px;
+}
+ul.rqt_comment_attachments_wrap li:last-child {
+  margin-right: 0;
+}
+ul.rqt_comment_attachments_wrap li a {
+  display: block;
+  outline: 0;
+}
+ul.rqt_comment_attachments_wrap li a img {
+  width: 100%;
+  object-fit: cover;
+  height: 76px;
+}
+ul.rqt_comment_attachments_wrap li a.rq-rating-img-text {
+  position: relative;
+}
+ul.rqt_comment_attachments_wrap li a.rq-rating-img-text span.rating-caption {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  text-align: center;
+  line-height: 4.2em;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+}
+.wrq-raiting-like-icon,
+.wrq-raiting-dislike-icon {
+  color: #000;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+.wrq-raiting-like-icon span,
+.wrq-raiting-dislike-icon span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.wrq-raiting-like-icon i,
+.wrq-raiting-dislike-icon i {
+  font-size: 20px;
+  color: #999;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.wrq-raiting-like-icon i:hover,
+.wrq-raiting-dislike-icon i:hover {
+  color: #444;
+}
+.wp-rating-extend button#reuse_button_imageupload {
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  color: #aaa;
+  height: auto;
+  margin-top: -14px;
+  margin-left: 2px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.wp-rating-extend button#reuse_button_imageupload:hover {
+  color: #333;
+}
+.wp-rating-extend button#reuse_button_imageupload i {
+  font-size: 22px;
+}
+
+.wrq-raiting-like-icon,
+.wrq-raiting-dislike-icon {
+  display: inline-block;
+  margin-right: 14px;
+}
